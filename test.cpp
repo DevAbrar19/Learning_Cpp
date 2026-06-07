@@ -2,35 +2,30 @@
 
 int main()
 {
-    int month;
+    double temp;
+    char unit;
 
-    std::cout << "Enter your month: ";
-    std::cin >> month;
+    std::cout << "Enter c for Celsius and f for Fahrenheit : ";
+    std::cin >> unit;
 
-    switch (month)
+    std::cout << "Enter temp : ";
+    std::cin >> temp;
+
+    if (unit == 'c')
     {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-        std::cout << "Summer";
-        break;
+        double f = ((9 * temp) / (double)5) + 32;
 
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-        std::cout << "Autumn";
-        break;
-
-    case 9:
-    case 10:
-    case 11:
-    case 12:
-        std::cout << "Winter";
-        break;
-
-    default:
-        std::cout << "Bogus Month";
+        std::cout << "Converted temp if Fahrenheit is " << f << std::endl;
     }
+    else if (unit == 'f')
+    {
+        double c = (temp - 32) * (5 / (double)9);
+        std::cout << "Converted temp if Celsius is " << c << std::endl;
+    }
+    else
+    {
+        std::cout << "Wrong input";
+    }
+
+    return 0;
 }
