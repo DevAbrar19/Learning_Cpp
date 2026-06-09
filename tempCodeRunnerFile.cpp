@@ -1,1 +1,1 @@
-    srand(time(NULL));
+std::cout << "You Lose." << std::endl;
