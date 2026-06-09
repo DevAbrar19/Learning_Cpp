@@ -1,1 +1,1 @@
-std::cout << "You Lose." << std::endl;
+10
