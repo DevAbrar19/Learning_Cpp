@@ -1,1 +1,1 @@
-    std::cout << name;
+    srand(time(NULL));

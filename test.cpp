@@ -1,23 +1,18 @@
 #include <iostream>
 
+void happyBirthday(std::string name);
+
 int main()
 {
-    int row, col;
-
-    std::cout << "Enter rows: ";
-    std::cin >> row;
-
-    std::cout << "Enter columns: ";
-    std::cin >> col;
-
-    for (int i = 1; i <= row; i++)
-    {
-        for (int j = 1; j <= col; j++)
-        {
-            std::cout << "* ";
-        }
-        std::cout << "\n";
-    }
-
+    std::string name = "Bro";
+    happyBirthday(name);
     return 0;
+}
+
+void happyBirthday(std::string name)
+{
+    std::cout << "Happy Birthday to you!" << name << std::endl;
+    std::cout << "Happy Birthday to you!" << std::endl;
+    std::cout << "Happy Birthday to you!" << std::endl;
+    std::cout << "Happy Birthday to you!" << std::endl;
 }
